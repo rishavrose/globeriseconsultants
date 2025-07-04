@@ -3,6 +3,8 @@
 use App\Http\Controllers\User\IndexController;
 use App\Http\Controllers\User\AboutController;
 use App\Http\Controllers\User\ContactController;
+use App\Http\Controllers\User\ContactFormController;
+use App\Http\Controllers\User\PHPMailerTestController;
 use App\Http\Controllers\User\TestimonialController;
 use App\Http\Controllers\User\TourPackageController;
 use App\Http\Controllers\User\StudyVisaController;
@@ -19,6 +21,8 @@ use Illuminate\Support\Facades\Route;
 Route::get("/",[IndexController::class,'indexview'])->name('index');
 Route::get("/about",[AboutController::class,'aboutview'])->name('about');
 Route::get("/contact",[ContactController::class,'contactview'])->name('contact');
+Route::post("/contact-form",[ContactFormController::class,'submitContactForm'])->name('contact.submit');
+Route::get("/test-email",[PHPMailerTestController::class,'testEmail'])->name('test.email');
 Route::get("/testimonial",[TestimonialController::class,'testimonialview'])->name('testimonial');
 Route::get("/tourpackage",[TourPackageController::class,'tourpackageview'])->name('tourpackage');
 Route::get("/studyvisa",[StudyVisaController::class,'studyvisaview'])->name('studyvisa');

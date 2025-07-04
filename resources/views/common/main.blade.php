@@ -1,4 +1,4 @@
-  @include('common.header') 
+@include('common.header') 
       <!--=====hero area start=======-->
       <div class="hero-area2 _relative" style="background-image: url(assets/background.jpg); min-height: 800px; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center;">
         <div class="container">
@@ -29,63 +29,75 @@
                         <p>Enter Your Right Information</p>
                     </div>
                     <div class="space16"></div>
-                    <form action="#">
+                    
+                    <!-- Toast Container -->
+                    <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 9999;"></div>
+                    
+                    <form id="contactForm" action="{{ route('contact.submit') }}" method="POST">
+                        @csrf
                         <div class="hero7-form">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="hero7-forrm-inputs">
-                                        <input type="text" placeholder="Your Name">
+                                        <input type="text" name="name" placeholder="Your Name" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="hero7-forrm-inputs">
-                                        <input type="email" placeholder="Your Email">
+                                        <input type="email" name="email" placeholder="Your Email" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="hero7-forrm-inputs">
-                                        <input type="number" placeholder="Phone">
+                                        <input type="tel" name="phone" placeholder="Phone" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="hero7-forrm-inputs">
-                                        <select class="wide her07" style="display: none;">
-                                            <option value="">Country</option>
-                                            <option value="">India</option>
-                                            <option value="">Nepal</option>
-                                            <option value="">Spain</option>
-                                            <option value="">Brazil</option>
-                                            <option value="">USA</option>
-                                            <option value="">Saudi Arabia</option>
-                                        </select><div class="nice-select wide her07" tabindex="0"><span class="current">Country</span><ul class="list"><li data-value="" class="option selected">Country</li><li data-value="" class="option">India</li><li data-value="" class="option">Nepal</li><li data-value="" class="option">Spain</li><li data-value="" class="option">Brazil</li><li data-value="" class="option">USA</li><li data-value="" class="option">Saudi Arabia</li></ul></div>
+                                        <select name="country" class="wide her07" required>
+                                            <option value="">Select Country</option>
+                                            <option value="India">India</option>
+                                            <option value="Nepal">Nepal</option>
+                                            <option value="Spain">Spain</option>
+                                            <option value="Brazil">Brazil</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Saudi Arabia">Saudi Arabia</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="UK">United Kingdom</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="France">France</option>
+                                            <option value="Dubai">Dubai</option>
+                                            <option value="Singapore">Singapore</option>
+                                            <option value="Other">Other</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12">
                                     <div class="hero7-forrm-inputs">
-                                        <select class="wide her07" style="display: none;">
-                                            <option value="">Selected Visa</option>
-                                            <option value="">Tourist Visa</option>
-                                            <option value="">Business Visa</option>
-                                            <option value="">Student Visa</option>
-                                            <option value="">Work Visa</option>
-                                        </select><div class="nice-select wide her07" tabindex="0">
-                                            <span class="current">Selected Visa</span>
-                                            <ul class="list">
-                                                <li data-value="" class="option selected">Selected Visa</li>
-                                                <li data-value="" class="option">Tourist Visa</li>
-                                                <li data-value="" class="option">Business Visa</li>
-                                                <li data-value="" class="option">Student Visa</li>
-                                                <li data-value="" class="option">Work Visa</li>
-                                            </ul>
-                                        </div>
+                                        <select name="visa_type" class="wide her07" required>
+                                            <option value="">Select Visa Type</option>
+                                            <option value="Tourist Visa">Tourist Visa</option>
+                                            <option value="Business Visa">Business Visa</option>
+                                            <option value="Student Visa">Student Visa</option>
+                                            <option value="Work Visa">Work Visa</option>
+                                            <option value="Transit Visa">Transit Visa</option>
+                                            <option value="Visit Visa">Visit Visa</option>
+                                            <option value="Other">Other</option>
+                                        </select>
                                     </div>
                                 </div>
 
                             </div>
                             <div class="space24"></div>
 
-                            <button type="submit"  class="theme-btn3 font-f-7">Apply Now</button>
+                            <button type="submit" class="theme-btn3 font-f-7" id="submitBtn">
+                              <span class="btn-text">Apply Now</span>
+                              <span class="btn-loading" style="display: none;">
+                                <i class="fa fa-spinner fa-spin"></i> Sending...
+                              </span>
+                            </button>
                         </div>
                     </form>
                 </div> 
@@ -724,7 +736,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
           </div>
         </div>
       </div>
-      <!--=====testimonial end=======-->
+      <!--=====testimonial end=======--> 
 
 
       <!--=====cta start=======-->
@@ -778,3 +790,206 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
       <!--=====cta end=======-->
 
         @include('common.footer')
+<div id="loaderOverlay" style="
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1056; /* higher than modal */
+  display: none;">
+  <div class="spinner-border text-warning" style="width: 3rem; height: 3rem;" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<script>
+    $(document).ready(function() {
+        // Toast function
+         const loader = document.getElementById('loaderOverlay');
+        function showToast(message, type = 'success') {
+            const toastId = 'toast-' + Date.now();
+            const iconClass = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-triangle';
+            const bgColor = type === 'success' ? '#d4edda' : '#f8d7da';
+            const borderColor = type === 'success' ? '#c3e6cb' : '#f5c6cb';
+            const textColor = type === 'success' ? '#155724' : '#721c24';
+            
+            const toast = `
+                <div id="${toastId}" class="toast-notification" style="
+                    background: ${bgColor};
+                    border: 1px solid ${borderColor};
+                    color: ${textColor};
+                    padding: 12px 16px;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    min-width: 300px;
+                    max-width: 400px;
+                    position: relative;
+                    animation: slideInRight 0.3s ease-out;
+                    font-size: 14px;
+                    line-height: 1.4;
+                ">
+                    <i class="fa ${iconClass}" style="margin-right: 8px; font-size: 16px;"></i>
+                    ${message}
+                    <button type="button" class="toast-close" style="
+                        position: absolute;
+                        top: 8px;
+                        right: 10px;
+                        background: none;
+                        border: none;
+                        font-size: 16px;
+                        cursor: pointer;
+                        color: ${textColor};
+                        opacity: 0.7;
+                        padding: 0;
+                        width: 20px;
+                        height: 20px;
+                    " onclick="closeToast('${toastId}')">×</button>
+                </div>
+            `;
+            
+            $('#toast-container').append(toast);
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                closeToast(toastId);
+            }, 5000);
+        }
+        
+        // Close toast function
+        window.closeToast = function(toastId) {
+            const toast = $('#' + toastId);
+            if (toast.length) {
+                toast.css('animation', 'slideOutRight 0.3s ease-in');
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }
+        }
+        
+        $('#contactForm').on('submit', function(e) {
+            e.preventDefault();
+            
+            const form = $(this);
+            const submitBtn = $('#submitBtn');
+            const btnText = $('.btn-text');
+            const btnLoading = $('.btn-loading');
+            const loader = document.getElementById('loaderOverlay');
+            
+            // Show loading state and disable button
+            submitBtn.prop('disabled', true);
+            btnText.hide();
+            btnLoading.show();
+            
+            // Prepare form data
+            const formData = new FormData(this);
+            
+            $.ajax({
+                url: form.attr('action'),
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    if (response.success) {
+                       loader.style.display = 'none'; // Hide loader
+                        //showToast(response.message, 'success');
+                         alert("✅ " + response.message );
+                        form[0].reset();
+                        
+                        // Reset nice-select dropdowns if they exist
+                        if (typeof $.fn.niceSelect !== 'undefined') {
+                            form.find('select').niceSelect('update');
+                        }
+                    }
+                },
+                error: function(xhr) {
+                    let errorMessage = 'An error occurred. Please try again.';
+                    
+                    if (xhr.responseJSON && xhr.responseJSON.message) {
+                        errorMessage = xhr.responseJSON.message;
+                    }
+                    loader.style.display = 'none'; // Hide loader
+                    alert("❌ Error: "+ response.message );
+                    //showToast(errorMessage, 'error');
+                },
+                complete: function() {
+                    // Reset button state - enable button after success or error
+                    submitBtn.prop('disabled', false);
+                    btnText.show();
+                    btnLoading.hide();
+                }
+            });
+        });
+    });
+    </script>
+
+    <style>
+    /* Toast Animations */
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideOutRight {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+    
+    /* Toast Styles */
+    .toast-notification {
+        transition: all 0.3s ease;
+    }
+    
+    .toast-notification:hover {
+        transform: translateX(-5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2) !important;
+    }
+    
+    .toast-close:hover {
+        opacity: 1 !important;
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 50%;
+    }
+    
+    .btn-loading {
+        color: #ffffff;
+    }
+    
+    .fa-spinner {
+        animation: fa-spin 2s infinite linear;
+    }
+    
+    @keyframes fa-spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    /* Responsive toast styles */
+    @media (max-width: 768px) {
+        #toast-container {
+            top: 10px !important;
+            right: 10px !important;
+            left: 10px !important;
+        }
+        
+        .toast-notification {
+            min-width: auto !important;
+            max-width: none !important;
+            font-size: 13px !important;
+        }
+    }
+    </style>
