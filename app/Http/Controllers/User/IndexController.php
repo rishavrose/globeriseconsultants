@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Service;
 
 
 class IndexController extends Controller
@@ -11,6 +12,7 @@ class IndexController extends Controller
 
     function indexview()
     {
-        return view('pages.index');
+        $services = Service::getActiveServices();
+        return view('pages.index', compact('services'));
     }
 }
