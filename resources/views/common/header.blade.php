@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <!-- Basic Meta Tags -->
+<head>
+  <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <!-- Title -->
-  <title>Home | Globerise Consultants – Your Gateway to a Global Future</title>
-  <meta name="description" content="Globerise Consultants helps individuals and businesses achieve global success through expert consulting in education, immigration, business expansion, and career development." />
-  <meta name="keywords" content="Globerise Consultants, immigration, global education, study abroad, business consulting, career development, overseas opportunities" />
+  <title>@yield('title', 'Globerise Consultants – Your Gateway to a Global Future')</title>
+  <meta name="description" content="@yield('meta_description', 'Globerise Consultants helps individuals and businesses achieve global success through expert consulting in education, immigration, business expansion, and career development.')" />
+  <meta name="keywords" content="@yield('meta_keywords', 'Globerise Consultants, immigration, global education, study abroad, business consulting, career development, overseas opportunities')" />
   <meta name="author" content="Globerise Consultants" />
   <meta name="robots" content="index, follow" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="{{ config('app.url') }}" />
+  <link rel="canonical" href="{{ url()->current() }}" />
 
   <!-- Open Graph (Facebook, LinkedIn) -->
-  <meta property="og:title" content="Globerise Consultants – Your Gateway to a Global Future" />
-  <meta property="og:description" content="Expert consulting for education, immigration, business, and career success abroad." />
+  <meta property="og:title" content="@yield('og_title', 'Globerise Consultants – Your Gateway to a Global Future')" />
+  <meta property="og:description" content="@yield('og_description', 'Expert consulting for education, immigration, business, and career success abroad.')" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ config('app.url') }}" />
-  <meta property="og:image" content="{{asset('assets/img/logo/favicon.ico')}}" />
+  <meta property="og:url" content="{{ url()->current() }}" />
+  <meta property="og:image" content="{{ asset('assets/img/logo/favicon.ico') }}" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Globerise Consultants – Your Gateway to a Global Future" />
-  <meta name="twitter:description" content="Consulting services for study abroad, immigration, business setup and career growth internationally." />
-  <meta name="twitter:image" content="{{asset('assets/img/logo/favicon.ico')}}" />
+  <meta name="twitter:title" content="@yield('twitter_title', 'Globerise Consultants – Your Gateway to a Global Future')" />
+  <meta name="twitter:description" content="@yield('twitter_description', 'Consulting services for study abroad, immigration, business setup and career growth internationally.')" />
+  <meta name="twitter:image" content="{{ asset('assets/img/logo/favicon.ico') }}" />
 
   <!-- Favicon -->
-  <link rel="icon" href="{{asset('assets/img/logo/favicon.ico')}}" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="{{asset('assets/img/logo/favicon.ico')}}" />
- 
+  <link rel="icon" href="{{ asset('assets/img/logo/favicon.ico') }}" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{{ asset('assets/img/logo/favicon.ico') }}" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Globerise Consultants",
+    "url": "{{ config('app.url') }}",
+    "logo": "{{ asset('assets/img/logo/Group-logo.png') }}",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+91-7065195955",
+      "contactType": "customer service",
+      "areaServed": "IN"
+    }],
+    "sameAs": [
+      "https://www.facebook.com/",
+      "https://www.linkedin.com/",
+      "https://www.instagram.com/",
+      "https://www.youtube.com/"
+    ]
+  }
+  </script>
  <!--=====CSS=======-->
  <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}"/>
  <link rel="stylesheet" href="{{asset('assets/css/font-awesome-pro.css')}}"/>
@@ -117,7 +139,7 @@
           <span data-text-preloader="E" class="letters-loading">E</span>
         </div>
 
-        <!-- Second Line: CONSULTING -->
+        <!-- Second Line: CONSULTING --> 
         <div class="txt-loading txt-sub">
           <span data-text-preloader="C" class="letters-loading">C</span>
           <span data-text-preloader="O" class="letters-loading">O</span>
@@ -126,9 +148,10 @@
           <span data-text-preloader="U" class="letters-loading">U</span>
           <span data-text-preloader="L" class="letters-loading">L</span>
           <span data-text-preloader="T" class="letters-loading">T</span>
-          <span data-text-preloader="I" class="letters-loading">I</span>
+          <span data-text-preloader="A" class="letters-loading">A</span>
           <span data-text-preloader="N" class="letters-loading">N</span>
-          <span data-text-preloader="G" class="letters-loading">G</span>
+          <span data-text-preloader="T" class="letters-loading">T</span>
+          <span data-text-preloader="S" class="letters-loading">S</span>
         </div>
       </div>
 
@@ -341,7 +364,7 @@
                     <img src="assets/img/icons/mobile-menu-icon2.svg" alt="">
                   </div>
                   <div class="mobile-menu-a">
-                    <a href="mailto:info@globeriseconsultants.com">info@globeriseconsultants.com</a>
+                    <a href="mailto:info@globeriseConsultants.com">info@globeriseConsultants.com</a>
                   </div>
                 </div>
     
@@ -353,7 +376,7 @@
                       <img src="assets/img/icons/mobile-menu-icon3.svg" alt="">
                     </div>
                     <div class="mobile-menu-a">
-                      <a href="mailto:info@globeriseconsultants.com">408,4th Floor,A-09 GD ITL Northex Tower,Netaji Subhash Place Delhi-110034</a>
+                      <a href="mailto:info@globeriseConsultants.com">408,4th Floor,A-09 GD ITL Northex Tower,Netaji Subhash Place Delhi-110034</a>
                     </div>
                   </div>
     

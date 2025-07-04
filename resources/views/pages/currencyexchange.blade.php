@@ -50,9 +50,9 @@
                 <span>Currenncy Exchange</span>
                 <div class="space16"></div>
                 <div class="col-lg-12">
-                <h1>Hassle-Free Currency Exchange Services with Globerise Consultant</h1>
+                <h1>Hassle-Free Currency Exchange Services with Globerise Consultants</h1>
                 <div class="space24"></div>
-                <p>Planning to travel abroad or sending money internationally? Globerise Consultant offers secure, fast, and reliable currency exchange services at competitive rates. Whether you're a student, tourist, or business traveler, we ensure that your foreign exchange needs are handled smoothly.</p>
+                <p>Planning to travel abroad or sending money internationally? Globerise Consultants offers secure, fast, and reliable currency exchange services at competitive rates. Whether you're a student, tourist, or business traveler, we ensure that your foreign exchange needs are handled smoothly.</p>
                 <div class="space20"></div>
                 <p>Why Choose Globerise for Currency Exchange?</p>
                 <ul>
@@ -120,7 +120,7 @@
               <div class="cta2-hadding2">
                 <h1>We're Committed to Making your Globerise Application Process</h1>
                 <div class="space16"></div>
-                <p>Globerise Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My consultant not only helped with the application globerise consulting.</p>
+                <p>Globerise Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My Consultants not only helped with the application globerise consulting.</p>
               </div>
             </div>
             <div class="col-lg-5">

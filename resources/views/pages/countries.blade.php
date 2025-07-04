@@ -150,7 +150,7 @@
               <div class="cta2-hadding2">
                 <h1>We're Committed to Making your Globerise Application Process</h1>
                 <div class="space16"></div>
-                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My consultant not only helped with the application visa consulting.</p>
+                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My Consultants not only helped with the application visa consulting.</p>
               </div>
             </div>
             <div class="col-lg-5">
