@@ -45,7 +45,7 @@
                         </div>
                           <div class="space24"></div>
                           <div class="tes2-hadding tes2-hadding2">
-                            <p>“I was overwhelmed by the complexities of the visa application process, but Visa Consulting turned it into a breeze. Their expert consultants guided me through every step, ensuring all my documents were in order. </p>
+                            <p>“I was overwhelmed by the complexities of the visa application process, but Visa Consulting turned it into a breeze. Their expert Consultants guided me through every step, ensuring all my documents were in order. </p>
                             <div class="space24"></div>
                             <ul class="tes2-review">
                               <li><i class="fa-solid fa-star"></i></li>
@@ -109,7 +109,7 @@
                         </div>
                           <div class="space24"></div>
                           <div class="tes2-hadding tes2-hadding2">
-                            <p>“Enrolling in a foreign university was a dream come true, but the visa application process was daunting. [Your Company Name] was a game-changer. Their knowledgeable consultants walked me through every step,” </p>
+                            <p>“Enrolling in a foreign university was a dream come true, but the visa application process was daunting. [Your Company Name] was a game-changer. Their knowledgeable Consultants walked me through every step,” </p>
                             <div class="space24"></div>
                             <ul class="tes2-review">
                               <li><i class="fa-solid fa-star"></i></li>
@@ -145,7 +145,7 @@
               <div class="cta2-hadding2">
                 <h1>We're Committed to Making your Globerise Application Process</h1>
                 <div class="space16"></div>
-                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My consultant not only helped with the application visa consulting.</p>
+                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My Consultants not only helped with the application visa consulting.</p>
               </div>
             </div>
             <div class="col-lg-5">

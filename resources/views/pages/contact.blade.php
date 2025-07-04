@@ -121,8 +121,8 @@
             <div class="contact7-iocn-hadding">
                 <h4><a href="#">Email Address</a></h4>
                 <div class="space6"></div>
-                <a href="mailto:info@globeriseconsultants.com">info@globeriseconsultants.com</a><br>
-                <a href="mailto:support@globeriseconsultants.com">support@globeriseconsultants.com</a>
+                <a href="mailto:info@globeriseConsultants.com">info@globeriseConsultants.com</a><br>
+                <a href="mailto:support@globeriseConsultants.com">support@globeriseConsultants.com</a>
             </div>
         </div>
     </div>
@@ -167,7 +167,7 @@
               <div class="cta2-hadding2">
                 <h1>We're Committed to Making your Globerise Application Process</h1>
                 <div class="space16"></div>
-                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My consultant not only helped with the application visa consulting.</p>
+                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My Consultants not only helped with the application visa consulting.</p>
               </div>
             </div>
             <div class="col-lg-5">

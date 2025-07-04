@@ -15,7 +15,7 @@
                   <p>Turn your dream of studying, traveling, or working abroad into reality with our expert-led, end-to-end support. Based in Delhi, Globerise offers personalized guidance, transparent processes, and reliable solutions to make your international move stress-free and successful.</p>
                   <div class="space32"></div>
                   <a href="#" class="theme-btn3 font-f-7">Claim Your Visa Journey!</a>
-                  <a href="#" class="theme-btn4 font-f-7">Request Toure Guidance</a>
+                  {{-- <a href="#" class="theme-btn4 font-f-7">Request Toure Guidance</a> --}}
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
               <div class="hadding2">
                 <span data-aos="fade-up" data-aos-duration="700">Service</span>
                 <div class="space16"></div>
-                <h1>Globerise Consultant: Simplifying Your Journey to Global Opportunities</h1>
+                <h1>Globerise Consultants: Simplifying Your Journey to Global Opportunities</h1>
               </div>
             </div>
           </div>
@@ -293,21 +293,70 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
         <h2 class="section-title"  data-aos="fade-up" data-aos-duration="700" style="font-weight: bold; margin-bottom: 40px;">Opportunities That Take You Places</h2>
         <div class="row justify-content-center" data-aos="fade-right" data-aos-duration="700">
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <img src="assets/img/media/media1.png" alt="Opportunities Mint" class="img-fluid">
+            <div class="media-logo-wrapper">
+              <img src="assets/img/media/media1.png" alt="Opportunities Mint" class="img-fluid media-logo">
+            </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <img src="assets/img/media/media2.png" alt="Opportunities Mint" class="img-fluid">
+            <div class="media-logo-wrapper">
+              <img src="assets/img/media/media2.png" alt="Opportunities Mint" class="img-fluid media-logo">
+            </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <img src="assets/img/media/media3.png" alt="Opportunities Chronicle" class="img-fluid">
+            <div class="media-logo-wrapper">
+              <img src="assets/img/media/media3.png" alt="Opportunities Chronicle" class="img-fluid media-logo">
+            </div>
           </div>
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-            <img src="assets/img/media/media4.png" alt="Opportunities India" class="img-fluid">
+            <div class="media-logo-wrapper">
+              <img src="assets/img/media/media4.png" alt="Opportunities India" class="img-fluid media-logo">
+            </div>
           </div> 
-          </div>
         </div>
-  </div>
-</div>
+      </div>
+    </div>
+
+    <style>
+      .media-logo-wrapper {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        transition: all 0.3s ease;
+      }
+
+      .media-logo {
+        max-width: 100%;
+        max-height: 80px;
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        object-fit: contain;
+      }
+
+      .media-logo-wrapper:hover {
+        transform: translateY(-5px);
+      }
+
+      .media-logo-wrapper:hover .media-logo {
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 768px) {
+        .media-logo {
+          max-height: 60px;
+        }
+        
+        .media-logo-wrapper {
+          height: 100px;
+          padding: 10px;
+        }
+      }
+    </style>
 
       <!--=====service end=======-->
             <!--=====choose start=======-->
@@ -318,7 +367,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
                     <div class="hadding2">
                       <span data-aos="fade-up" data-aos-duration="700">Why Choose Us</span>
                       <div class="space16"></div>
-                      <h1 data-aos="fade-up" data-aos-duration="900">Why Choose Globerise Consultant for Your Business Transformation</h1>
+                      <h1 data-aos="fade-up" data-aos-duration="900">Why Choose Globerise Consultants for Your Business Transformation</h1>
                     </div>
                   </div>
                 </div>
@@ -415,7 +464,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
                         <div class="choose2-text-box2">
                           <h4><a href="#">Innovation</a></h4>
                           <div class="space12"></div>
-                          <p>Globerise Consultant stays at the forefront of payment innovations  </p>
+                          <p>Globerise Consultants stays at the forefront of payment innovations  </p>
                         </div>
                         <div class="choose2-icon-box2">
                           <img src="assets/img/icons/choose2-icon6.svg" alt="">
@@ -442,7 +491,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
               <div class="hadding2">
                 <span data-aos="fade-up" data-aos-duration="700">Countries We Offer</span>
                 <div class="space16"></div>
-                <h1 data-aos="fade-up" data-aos-duration="1000">Globerise Consultant offers a range of services and expertise to help businesses.</h1>
+                <h1 data-aos="fade-up" data-aos-duration="1000">Globerise Consultants offers a range of services and expertise to help businesses.</h1>
               </div>
             </div>
           </div>
@@ -566,9 +615,9 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
               <div class="hadding2">
                 <span data-aos="fade-right" data-aos-duration="700">Testimonials</span>
                 <div class="space16"></div>
-                <h1 data-aos="fade-right" data-aos-duration="900">Globerise Consultant: Hear From Our Satisfied Clients</h1>
+                <h1 data-aos="fade-right" data-aos-duration="900">Globerise Consultants: Hear From Our haapy Clients</h1>
                 <div class="space16"></div>
-                <p data-aos="fade-right" data-aos-duration="1100">Globerise Consultant doesn't just handle the paperwork; they genuinely care about their clients' success. My consultant not only helped with the application but also gave me valuable tips for the interview.</p>
+                <p data-aos="fade-right" data-aos-duration="1100">Globerise Consultants doesn't just handle the paperwork; they genuinely care about their clients' success. My Consultants not only helped with the application but also gave me valuable tips for the interview.</p>
                 <div class="space32"></div>
                 <div class="" data-aos="fade-right" data-aos-duration="700">
                   <a href="#" class="theme-btn5 font-f-7">Read Our All Reviews </a>
@@ -593,7 +642,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
                     </div>
                       <div class="space24"></div>
                       <div class="tes2-hadding tes2-hadding2">
-                        <p>“I was overwhelmed by the complexities of the visa application process, but Globerise Consultant turned it into a breeze. Their expert consultants guided me through every step, ensuring all my documents were in order. </p>
+                        <p>“I was overwhelmed by the complexities of the visa application process, but Globerise Consultants turned it into a breeze. Their expert Consultants guided me through every step, ensuring all my documents were in order. </p>
                         <div class="space24"></div>
                         <ul class="tes2-review">
                           <li><i class="fa-solid fa-star"></i></li>
@@ -623,7 +672,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
                     </div>
                       <div class="space24"></div>
                       <div class="tes2-hadding">
-                        <p>“I was overwhelmed by the complexities of the visa application process, but Globerise Consultant turned it into a breeze. Their expert consultants guided me through every step, ensuring all my documents were in order. </p>
+                        <p>“I was overwhelmed by the complexities of the visa application process, but Globerise Consultants turned it into a breeze. Their expert Consultants guided me through every step, ensuring all my documents were in order. </p>
                         <div class="space24"></div>
                         <ul class="tes2-review">
                           <li><i class="fa-solid fa-star"></i></li>
@@ -653,7 +702,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
                     </div>
                       <div class="space24"></div>
                       <div class="tes2-hadding">
-                        <p>“I was overwhelmed by the complexities of the visa application process, but Globerise Consultant turned it into a breeze. Their expert consultants guided me through every step, ensuring all my documents were in order. </p>
+                        <p>“I was overwhelmed by the complexities of the visa application process, but Globerise Consultants turned it into a breeze. Their expert Consultants guided me through every step, ensuring all my documents were in order. </p>
                         <div class="space24"></div>
                         <ul class="tes2-review">
                           <li><i class="fa-solid fa-star"></i></li>
@@ -704,7 +753,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
           <div class="card-body">
             <p><i class="bi bi-geo-alt-fill"></i> 408, 4th Floor, A-09 GD ITL Northex Tower Netaji Subhash Place, Delhi - 110034</p>
             <p><i class="bi bi-telephone-fill"></i> +91-7065195955 ,+91-9318355539</p>
-            <p><i class="bi bi-envelope-fill"></i> info@globeriseconsultants.com</p>
+            <p><i class="bi bi-envelope-fill"></i> info@globeriseConsultants.com</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6999.9057670837365!2d77.149731!3d28.691056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0233444361b5%3A0xef2dea9ab6276ee!2sNetaji%20Subhash%20Place%2C%20Shakurpur%2C%20Delhi%2C%20110034!5e0!3m2!1sen!2sin!4v1751547161624!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen=""></iframe>
           </div>
         </div>
@@ -717,7 +766,7 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
           <div class="card-body">
             <p><i class="bi bi-geo-alt-fill"></i> Al Owais building 2, floor M office no. M06 Al Rigga road, Deira Dubai</p>
             <p><i class="bi bi-telephone-fill"></i>+91-7065195955 ,+91-9318355539</p>
-            <p><i class="bi bi-envelope-fill"></i>info@globeriseconsultants.com</p>
+            <p><i class="bi bi-envelope-fill"></i>info@globeriseConsultants.com</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28865.42041995206!2d55.320888000000004!3d25.264612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d9c3f9f0499%3A0x80bda852330a3ad!2sAl%20Owais%20building%20E%20block!5e0!3m2!1sen!2sin!4v1751547210689!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen=""></iframe>
           </div>
         </div>

@@ -78,26 +78,24 @@ At Globerise Consultants, we believe that borders should never be a barrier to y
                         <p style="color: #181A1C;">408,4th Floor,A-09 GD ITL Northex Tower,Netaji Subhash Place Delhi-110034</p>
                       </div>
         
-                      <div class="contact-icon-box2">
-                        <div class="contact-icon">
-                         <img src="assets/img/icons/page-contact-icon3.svg" alt="">
-                        
+                      <div class="contact-icon-box2 d-flex align-items-center mb-2">
+                        <div class="contact-icon me-2">
+                          <img src="assets/img/icons/page-contact-icon3.svg" alt="" style="width:24px; height:24px; object-fit:contain;">
                         </div>
                         <div class="contact-icon-h">
                           <a href="tel:7065195955/9318355539">7065195955/9318355539</a>
                         </div>
                       </div>
-      
-                      <div class="contact7-icon-box1">
-                        <div class="contact-icon">
-                           <img src="assets/img/icons/page-contact-icon2.svg" alt="">
+
+                      <div class="contact7-icon-box1 d-flex align-items-center">
+                        <div class="contact-icon me-2">
+                          <img src="assets/img/icons/page-contact-icon2.svg" alt="" style="width:24px; height:24px; object-fit:contain;">
                         </div>
                         <div class="contact-icon-h">
-                          <a href="mailto:info@globeriseconsultants.com"><small>info@globeriseconsultants.com</small></a>
+                          <a href="mailto:info@globeriseConsultants.com"><small>info@globeriseConsultants.com</small></a>
                         </div>
-                      </div>
-                    </div>
-        
+                      </div>               
+                      </div>     
         
                     </div>
                   </div>
@@ -133,7 +131,7 @@ At Globerise Consultants, we believe that borders should never be a barrier to y
                 "brandSetting":{
                     "brandName":"Globerise Consultants",
                     "brandSubTitle":"undefined",
-                    "brandImg":"https://test.globeriseconsultants.com/assets/img/logo/logo-black.png",
+                    "brandImg":"https://test.globeriseConsultants.com/assets/img/logo/logo-black.png",
                     "welcomeText":"Hi there!\nHow can I help you?",
                     "messageText":"Hello, %0A",
                     "backgroundColor":"#00e785",

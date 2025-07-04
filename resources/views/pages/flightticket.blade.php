@@ -52,7 +52,7 @@
                  <div class="col-lg-12">
                 <h1>Flight Ticket Reservation – Fly with Ease</h1>
                 <div class="space24"></div>
-                <p>Globerise Consultant offers affordable and hassle-free flight ticket booking for students, tourists, and professionals. Our team ensures you get the best fares, convenient routes, and reliable booking support for both one-way and round-trip journeys.</p>
+                <p>Globerise Consultants offers affordable and hassle-free flight ticket booking for students, tourists, and professionals. Our team ensures you get the best fares, convenient routes, and reliable booking support for both one-way and round-trip journeys.</p>
                 <div class="space20"></div>
                 <h6>Our Services Include:</h6><br>
                 <ul>
@@ -84,7 +84,7 @@
               <div class="cta2-hadding2">
                 <h1>We're Committed to Making your Globerise Application Process</h1>
                 <div class="space16"></div>
-                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My consultant not only helped with the application visa consulting.</p>
+                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My Consultants not only helped with the application visa consulting.</p>
               </div>
             </div>
             <div class="col-lg-5">

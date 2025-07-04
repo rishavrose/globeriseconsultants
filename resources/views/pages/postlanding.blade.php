@@ -51,7 +51,7 @@
                 <div class="space16"></div>
                 <h1>Post-Landing Services – Your Smooth Start Abroad Begins Here</h1>
                 <div class="space24"></div>
-                <p>At Globerise Consultant, our support doesn't end once you get your visa — it begins a new chapter. Our Post-Landing Services are designed to help you settle in your new country quickly and confidently.</p>
+                <p>At Globerise Consultants, our support doesn't end once you get your visa — it begins a new chapter. Our Post-Landing Services are designed to help you settle in your new country quickly and confidently.</p>
                 <br>
                 <div class="space20"></div>
                 <h6>What We Offer:</h6><br>
@@ -92,7 +92,7 @@
               <div class="cta2-hadding2">
                 <h1>We're Committed to Making your Globerise Application Process</h1>
                 <div class="space16"></div>
-                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My consultant not only helped with the application visa consulting.</p>
+                <p>Visa Consulting doesn't just handle the paperwork; they genuinely care about their clients' success. My Consultants not only helped with the application visa consulting.</p>
               </div>
             </div>
             <div class="col-lg-5">
