@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
   <!-- Title -->
-  <title>@yield('title', 'Globerise Consultants – Your Gateway to a Global Future')</title>
+  <title>@yield('title', setting('site_title')) - {{ setting('site_tagline', 'Your Global Immigration Partner') }}</title>
   <meta name="description" content="@yield('meta_description', 'Globerise Consultants helps individuals and businesses achieve global success through expert consulting in education, immigration, business expansion, and career development.')" />
   <meta name="keywords" content="@yield('meta_keywords', 'Globerise Consultants, immigration, global education, study abroad, business consulting, career development, overseas opportunities')" />
   <meta name="author" content="Globerise Consultants" />
@@ -17,7 +17,7 @@
   <link rel="canonical" href="{{ url()->current() }}" />
 
   <!-- Open Graph (Facebook, LinkedIn) -->
-  <meta property="og:title" content="@yield('og_title', 'Globerise Consultants – Your Gateway to a Global Future')" />
+  <meta property="og:title" content="@yield('og_title', setting('site_title') . ' - ' . setting('site_tagline', 'Your Global Immigration Partner'))" />
   <meta property="og:description" content="@yield('og_description', 'Expert consulting for education, immigration, business, and career success abroad.')" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ url()->current() }}" />
@@ -25,7 +25,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="@yield('twitter_title', 'Globerise Consultants – Your Gateway to a Global Future')" />
+  <meta name="twitter:title" content="@yield('twitter_title', setting('site_title') . ' - ' . setting('site_tagline', 'Your Global Immigration Partner'))" />
   <meta name="twitter:description" content="@yield('twitter_description', 'Consulting services for study abroad, immigration, business setup and career growth internationally.')" />
   <meta name="twitter:image" content="{{ asset('assets/img/logo/favicon.ico') }}" />
 

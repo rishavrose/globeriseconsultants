@@ -31,3 +31,8 @@ Route::get("/postlanding",[PostLandingController::class,'postlandingview'])->nam
 Route::get("/currencyexchange",[CurrencyExchangeController::class,'currencyexchangeview'])->name('currencyexchange');
 Route::get("/flightticket",[FlightTicketController::class,'flightticketview'])->name('flightticket');
 Route::get("/countries",[CountryController::class,'countryview'])->name('countries');
+
+// Admin panel redirect
+Route::get('/admin', function () {
+    return redirect()->route('admin.login');
+});

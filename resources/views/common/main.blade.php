@@ -176,117 +176,30 @@ Your dreams deserve more than just paperwork—they deserve a partner. Let Globe
           </div>
           <div class="space30"></div>
           <div class="row">
+            @forelse($services as $index => $service)
             <div class="col-lg-4 col-md-6">
-              <div class="" data-aos="fade-up" data-aos-duration="700">
+              <div class="" data-aos="fade-up" data-aos-duration="{{ 700 + ($index * 200) }}">
                 <div class="service1-box">
                   <div class="service1-icon">
-                    <img src="assets/img/icons/service2-icon1.svg" alt="">
+                    <img src="{{ $service->icon ?: 'assets/img/icons/service2-icon1.svg' }}" alt="{{ $service->title }}">
                   </div>
                   <div class="space24"></div>
                   <div class="hadding2">
-                    <h3><a href="#">Study Visa</a></h3>
+                    <h3><a href="{{ $service->link ?: '#' }}">{{ $service->title }}</a></h3>
                     <div class="space16"></div>
-                    <p>Are you dreaming of studying in countries like Canada, the USA, the UK, Australia, or Europe? Our expert study visa services are here to guide you every step of the way — from choosing the right university to preparing your visa documentation.</p>
+                    <p>{{ $service->description }}</p>
                   </div>
                   <div class="space16"></div>
-                  <a class="learn-more2" href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <a class="learn-more2" href="{{ $service->link ?: '#' }}">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="" data-aos="fade-up" data-aos-duration="900">
-                <div class="service1-box">
-                  <div class="service1-icon">
-                    <img src="assets/img/icons/service2-icon2.svg" alt="">
-                  </div>
-                  <div class="space24"></div>
-                  <div class="hadding2">
-                    <h3><a href="#">Tour Package</a></h3>
-                    <div class="space16"></div>
-                    <p>Discover affordable and customized tour packages that include travel, stay, sightseeing, and activities — all arranged for your perfect holiday. Book now for hassle-free travel experiences across top destinations!</p>
-                    <div class="space16"></div>
-                    <a class="learn-more2" href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                  </div>
-                </div>
-              </div>
+            @empty
+            <!-- Fallback if no services -->
+            <div class="col-12 text-center">
+              <p>No services available at the moment.</p>
             </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="" data-aos="fade-up" data-aos-duration="1000">
-                <div class="service1-box">
-                  <div class="service1-icon">
-                    <img src="assets/img/icons/service2-icon3.svg" alt="">
-                  </div>
-                  <div class="space24"></div>
-                  <div class="hadding2">
-                    <h3><a href="#">Tourist Visa</a></h3>
-                    <div class="space16"></div>
-                    <p>A tourist visa allows you to visit another country for leisure, sightseeing, or short-term travel. We help you with hassle-free visa processing, document preparation, and travel planning so you can explore the world without stress.</p>
-                    <div class="space16"></div>
-                    <a class="learn-more2" href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="" data-aos="fade-up" data-aos-duration="700">
-                <div class="service1-box">
-                  <div class="service1-icon">
-                    <img src="assets/img/icons/service2-icon4.svg" alt="">
-                  </div>
-                  <div class="space24"></div>
-                  <div class="hadding2">
-                    <h3><a href="#">Post Landing Services </a></h3>
-                    <div class="space16"></div>
-                    <p>Globerise provides complete post landing support for students and travelers — including airport pickup, accommodation assistance, SIM cards, job search guidance, and local orientation for easy settlement abroad.
-
-</p>
-                    <div class="space16"></div>
-                    <a class="learn-more2" href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="" data-aos="fade-up" data-aos-duration="900">
-                <div class="service1-box">
-                  <div class="service1-icon">
-                    <img src="assets/img/icons/service2-icon5.svg" alt="">
-                  </div>
-                  <div class="space24"></div>
-                  <div class="hadding2">
-                    <h3><a href="#">Currency Exchange</a></h3>
-                    <div class="space16"></div>
-                    <p>Globerise offers reliable currency exchange services with competitive rates for students, tourists, and business travelers. Get fast, secure, and hassle-free forex support for your international needs.
-
-</p>
-                    <div class="space16"></div>
-                    <a class="learn-more2" href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="" data-aos="fade-up" data-aos-duration="1000">
-                <div class="service1-box">
-                  <div class="service1-icon">
-                    <img src="assets/img/icons/service2-icon6.svg" alt="">
-                  </div>
-                  <div class="space24"></div>
-                  <div class="hadding2">
-                    <h3><a href="#">Flight Ticket Reservation</a></h3>
-                    <div class="space16"></div>
-                    <p>Globerise offers affordable and flexible flight ticket reservations for students, tourists, and professionals. Get expert support for visa-compliant bookings, cancellations, and date changes — all in one place.</p>
-                    <div class="space16"></div>
-                    <a class="learn-more2" href="#">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                  </div>
-                </div>
-              </div>
-            </div> 
+            @endforelse
 
           </div>
           <div class="space40"></div>
