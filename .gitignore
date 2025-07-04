@@ -1,0 +1,16 @@
+vendor/
+/.idea
+Homestead.json
+Homestead.yaml
+.env
+.phpunit.result.cache
+doc.txt
+config/database.php
+/files
+storage/apiogs/
+storage/apiogs/
+storage/logs/
+storage/
+public/logs/
+public/index.php
+composer.lock
